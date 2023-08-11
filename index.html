@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distirbucion de mesas</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- MESA 1 -->
+        <div class="box mesa" ondragover="allowDrop(event)" ondrop="drop(event)">
+
+            Mesa 1
+            <div class="drag-item" draggable="true" ondragstart="drag(event)">
+                Alexis Fernandez
+            </div>
+            
+            <div class="drag-item" draggable="true" ondragstart="drag(event)">
+                Mauricio Arana
+            </div>
+        </div>
+
+        <!-- MESA 2 -->
+        <div class="box mesa" ondragover="allowDrop(event)" ondrop="drop(event)">
+            Mesa 2
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

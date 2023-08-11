@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+  /* Estilo para las cajas */
+.box {
+    width: 200px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  /* Estilo cuando se arrastra una caja */
+.box.dragging {
+    opacity: 0.5;
+}
+
+  /* Estilo para el contenido arrastrable dentro de las mesas */
+.mesa .drag-item {
+    background-color: #87CEFA;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  /* Estilo para las cajas "mesa" */
+.mesa {
+    width: 220px; /* Aumentamos el ancho */
+    height: 150px; /* Aumentamos la altura */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex; /* Para que los elementos internos se ajusten correctamente */
+    flex-direction: column; /* Para alinear los elementos verticalmente */
+    justify-content: center; /* Para centrar verticalmente los elementos */
+    align-items: center; /* Para centrar horizontalmente los elementos */
+}
